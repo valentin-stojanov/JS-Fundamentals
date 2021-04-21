@@ -1,17 +1,18 @@
 function equalArrays(firstArray, secondArray) {
     let sum = 0;
+    let isEqual = true;
     for (let i = 0; i < firstArray.length; i++) {
         firstArray[i] = Number(firstArray[i]);
         secondArray[i] = Number(secondArray[i]);
-        if (firstArray[i] != secondArray[i]) {
+        if (firstArray[i] !== secondArray[i]) {
             console.log(`Arrays are not identical. Found difference at ${i} index`);
-            sum = -1;
+            isEqual = false;
             break;
         } else {
             sum += firstArray[i];
         }
     }
-    if(sum != -1){
+    if(isEqual){
         console.log(`Arrays are identical. Sum: ${sum}`);
     }
 }
