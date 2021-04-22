@@ -1,11 +1,11 @@
-function addOrSubtract(array){
+function addOrSubtract(array) {
     let sumOfOriginalArray = 0;
     let sumOfModifiedArray = 0;
     for (let i = 0; i < array.length; i++) {
-        sumOfOriginalArray+=array[i];
-        if (array[i] % 2 === 0){
+        sumOfOriginalArray += array[i];
+        if (array[i] % 2 === 0) {
             array[i] += i;
-        }else{
+        } else {
             array[i] -= i;
         }
         sumOfModifiedArray += array[i];

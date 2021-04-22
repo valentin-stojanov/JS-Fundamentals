@@ -1,9 +1,9 @@
 function arrayRotation2(array, numberOfRotations) {
     for (let i = 0; i < numberOfRotations; i++) {
         for (let j = 0; j < array.length - 1; j++) {
-            // let tempValue = array[j+1];
-            // array[j+1] = array[j];
-            // array[j] = tempValue;
+            // let tempValue = array[j+1];// using temp variable.
+            // array[j+1] = array[j];// using temp variable.
+            // array[j] = tempValue;// using temp variable.
             array[j] += array[j + 1];
             array[j + 1] = array[j] - array[j + 1];
             array[j] -= array[j + 1];
