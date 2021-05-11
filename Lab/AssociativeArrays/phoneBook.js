@@ -1,9 +1,7 @@
 function solve(input){
     let phoneBook = {};
      for(let line of input){
-        let tokens = line.split(" ");
-        let name = tokens[0];
-        let phone = tokens[1];
+        let [name, phone] = line.split(" ");
         phoneBook[name] = phone;
 
      }
